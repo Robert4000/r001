@@ -41,9 +41,13 @@ Robert Banegas, 2018
  
  REFERENCES
  ==========
- ROS.ORG Kinetic
+ ROS.ORG / Kinetic
  
- OPENSLAM.ORG slam
+ ROS.ORG / Robot_Localization. Fusing multiple sensors' data.
+ 
+ OPENSLAM.ORG 
+ 
+ 
  
   
  VISION
@@ -52,7 +56,7 @@ Robert Banegas, 2018
 
  NVIDIA TensorRT
 
- Visual slam
+ VISUAL Slam
  
  
  
