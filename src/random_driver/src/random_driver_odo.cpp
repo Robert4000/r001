@@ -1,7 +1,7 @@
 
 //  Compute 2d pose of the robot based on the wheel encoder, steering wheel angle and imu angular velocity
-//  Robert Banegas  
-
+//  Robert Banegas, 2018  
+//
 
 //  wheel_circunference = 2 * wheel_radius * 3.14;
 //  wheel_travel_distance = wheel_circunference  * ( ticks / ticks_per_revolution )
