@@ -1,6 +1,7 @@
 # r001
 
-Compute 2d pose of the robot based on the wheel encoder, steering wheel angle and imu angular velocity
+Compute 2d pose of the robot based on the wheel encoder, steering wheel angle and imu angular velocity.
+
 Robert Banegas, 2018  
 
 
@@ -40,15 +41,16 @@ Robert Banegas, 2018
  
  REFERENCES
  ==========
- ROS.ORG Kinetic
- OPENSLAM.ORG slam
+ ROS.ORG Kinetic.
+ OPENSLAM.ORG slam.
  
   
  VISION
  ======
  GOOGLE TensorFlow
  NVIDIA TensorRT
- Visual slam 
+ Visual slam
+ 
  
  
  
