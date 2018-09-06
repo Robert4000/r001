@@ -20,7 +20,7 @@ Robert Banegas, 2018
  - Execute the following commands on different terminals ( Use Ctrl-Shift-T )
   
  # run ros kinetic
-    runros
+    roscore
  
  # build the project
     cd rosrover_ws
