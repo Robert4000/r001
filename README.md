@@ -1,4 +1,4 @@
-# R001 - COMPUTE THE 2D POSE OF A ROBOT
+# R001 - ESTIMATE THE 2D POSE OF A ROBOT
 
 Compute 2d pose of the robot based on the wheel encoder, steering wheel angle and imu angular velocity.
 
