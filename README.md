@@ -4,7 +4,7 @@ Compute 2d pose of the robot based on the wheel encoder, steering wheel angle an
 Robert Banegas, 2018  
 
 
- Build  
+ BUILD  
  =====
   #  Use an Ubuntu 16.04 machine
   #  Install Ros Kinetic
@@ -15,7 +15,7 @@ Robert Banegas, 2018
     -  git pull https://github.com/Robert4000/r001.git
      
 
- Test
+ TEST
  ====
  - Execute the following commands on different terminals ( Use Ctrl-Shift-T )
   
@@ -25,14 +25,30 @@ Robert Banegas, 2018
  # build the project
     cd rosrover_ws
     catkin_make
+    source ~/rosrover_ws/devel/setup.bash
  
- # Run the ros publisher
+ # Run the ros publisher that computes and broadcast the 2D pose values
     rosrun random_driver random_driver
  
- # Run the ros subscriber
+ # Run the ros subscriber that reads and shows the 2D pose values
     rostopic echo /odom
  
  # Run the ros computation graph 
     rosrun rqt_graph rqt_graph
     
-    
+ 
+ 
+ REFERENCES
+ ==========
+ ROS.ORG Kinetic
+ OPENSLAM.ORG slam
+ 
+  
+ VISION
+ ======
+ GOOGLE TensorFlow
+ NVIDIA TensorRT
+ Visual slam 
+ 
+ 
+ 
