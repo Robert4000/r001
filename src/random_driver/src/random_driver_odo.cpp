@@ -4,6 +4,8 @@
 #include <nav_msgs/Odometry.h>
 #include <tf/transform_broadcaster.h>
 
+// odo - random values
+
 int main(int argc, char **argv) {
 
 //Initializes ROS, and sets up a node
@@ -64,6 +66,9 @@ ros::Rate rate(10);
 }
 
 
+///
+///
+
 //  wheel_circunference = 2 * wheel_radius * 3.14;
 //  wheel_travel_distance = wheel_circunference  * ( ticks / ticks_per_revolution )
 
@@ -73,7 +78,7 @@ ros::Rate rate(10);
 
 //  xv *= 10;  // Adjust x velocity/s at 10Hz
 //  yv *= 10;  // Adjust y velocity/s at 10Hz
-//  zv  = zv   // Read from the Gyro 
+//  zv  = zv   // Merge from the Gyro 
 
 //  Compute odometry in a typical way given the velocities of the robot  
 
