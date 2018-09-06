@@ -197,7 +197,7 @@ include_directories(
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
 
-set( sources ~/rosrover_ws/src/random_driver/src/random_driver.cpp )
+set( sources ~/rosrover_ws/src/random_driver/src/random_driver_odo.cpp )
 
 add_executable(random_driver ${sources} )
 

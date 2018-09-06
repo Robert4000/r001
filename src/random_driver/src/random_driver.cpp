@@ -35,17 +35,4 @@ ros::Rate rate(10);
 }
 
 
-//  wheel_circunference = 2 * wheel_radius * 3.14;
-//  wheel_travel_distance = wheel_circunference  * ( ticks / ticks_per_revolution )
-
-//  wheel_turning_distance =  steering_wheel_turn_angle * wheel_travel_distance
-//  x = -wheel_turning_distance * sin ( steering_wheel_turn_angle )
-//  y =  wheel_turning_distance * cos ( steering_wheel_turn_angle )
-
-//  xv *= 10;  // Adjust x velocity/s at 10Hz
-//  yv *= 10;  // Adjust y velocity/s at 10Hz
-//  zv  = zv   // Read from the Gyro 
-
-//  Compute odometry in a typical way given the velocities of the robot  
-
 
