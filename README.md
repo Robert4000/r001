@@ -41,14 +41,17 @@ Robert Banegas, 2018
  
  REFERENCES
  ==========
- ROS.ORG Kinetic.
- OPENSLAM.ORG slam.
+ ROS.ORG Kinetic
+ 
+ OPENSLAM.ORG slam
  
   
  VISION
  ======
  GOOGLE TensorFlow
+
  NVIDIA TensorRT
+
  Visual slam
  
  
