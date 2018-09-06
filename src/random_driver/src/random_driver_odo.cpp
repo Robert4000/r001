@@ -4,6 +4,8 @@
 #include <nav_msgs/Odometry.h>
 #include <tf/transform_broadcaster.h>
 
+// odo - random values
+
 int main(int argc, char **argv) {
 
 //Initializes ROS, and sets up a node
