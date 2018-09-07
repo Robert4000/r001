@@ -33,6 +33,7 @@ Robert Banegas, 2018
     - roscore
    
  - Run Publisher
+    - source ~/rosrover_ws/devel/setup.bash
     - rosrun random_driver random_driver
  
  - Run Subscriber
