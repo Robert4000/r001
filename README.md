@@ -10,17 +10,17 @@ Robert Banegas, 2018
  -  Use Ubuntu 16.04
  -  Use Ros Kinetic 
  -  Set  
-    -- mkdir rosrover_ws 
-    -- cd rosrover_ws
+    - mkdir rosrover_ws 
+    - cd rosrover_ws
  
  -  Pull  
-    -- git init
-    -- git pull https://github.com/Robert4000/r001.git
+    - git init
+    - git pull https://github.com/Robert4000/r001.git
      
  
  -  Build
-    catkin_make
-    source ~/rosrover_ws/devel/setup.bash
+    - catkin_make
+    - source ~/rosrover_ws/devel/setup.bash
 
 
 
