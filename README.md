@@ -7,18 +7,18 @@ Robert Banegas, 2018
 
  A. BUILD  
  ========
- #  Use Ubuntu 16.04
- #  Use Ros Kinetic 
- #  Set  
-    -  mkdir rosrover_ws 
-    -  cd rosrover_ws
+ -  Use Ubuntu 16.04
+ -  Use Ros Kinetic 
+ -  Set  
+    mkdir rosrover_ws 
+    cd rosrover_ws
  
- #  Pull  
-    -  git init
-    -  git pull https://github.com/Robert4000/r001.git
+ -  Pull  
+    git init
+    git pull https://github.com/Robert4000/r001.git
      
  
- #  Build
+ -  Build
     catkin_make
     source ~/rosrover_ws/devel/setup.bash
 
@@ -26,7 +26,7 @@ Robert Banegas, 2018
 
  B. TEST
  =======
- - Execute the following commands on different terminals ( Use Ctrl-Shift-T )
+  - Execute the following commands on different terminals ( Use Ctrl-Shift-T )
   
  
  # Run Ros
