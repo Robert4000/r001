@@ -1,11 +1,11 @@
-# R001 - ESTIMATE THE 2D POSE OF A ROBOT
+# Estimate the 2D pose of a robot
 
 Compute 2d pose of the robot based on the wheel encoder, steering wheel angle and imu angular velocity.
 
 Robert Banegas, 2018  
 
 
- A. BUILD  
+ Build  
  ========
  -  Use Ubuntu 16.04
  -  Use Ros Kinetic 
@@ -24,43 +24,39 @@ Robert Banegas, 2018
 
 
 
- B. TEST
- =======
+ Test
+ ====
+ 
   - Execute the following commands on different terminals ( Use Ctrl-Shift-T )
   
- 
- # Run Ros
+  - Run Ros
     roscore
    
- # Run Publisher
+ - Run Publisher
     rosrun random_driver random_driver
  
- # Run Subscriber
+ - Run Subscriber
     rostopic echo /odom
  
- # Run Ros Graph 
+ - Run Ros Graph 
     rosrun rqt_graph rqt_graph
     
  
  
- C. REFERENCES
- ==============
- ROS.ORG / Kinetic
- 
- ROS.ORG / Robot_Localization. Fusing multiple sensors' data.
- 
- OPENSLAM.ORG 
+ References
+ ==========
+ - ros.org / Kinetic
+ - ros.org / Robot_Localization. Fusing multiple sensors' data.
+ - openslam.org 
  
  
  
   
- D. VISION
- ========
- GOOGLE TensorFlow
-
- NVIDIA TensorRT
-
- VISUAL Slam
+ Vision
+ =======
+ - Google TensorFlow
+ - Nvidia TensorRT
+ - Visual Slam
  
  
  
