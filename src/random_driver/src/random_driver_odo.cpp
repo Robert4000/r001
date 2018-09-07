@@ -85,7 +85,7 @@ int main(int argc, char **argv)
 		current_time = ros::Time::now();
 
 		// Get sensors data
-                // TODO The following 3 lines are random simulated. Use ros services and device drivers instead.   
+                // TODO The following 3 lines are random simulated. Use ros subscribers and device drivers.   
 
                 steering_angle		= int   ( rand() %  90  );  // 90 steering 
                 encoder_ticks		= double( rand() %  512 );  // 512 ticks per evolution
