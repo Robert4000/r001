@@ -30,16 +30,16 @@ Robert Banegas, 2018
   - Execute the following commands on different terminals ( Use Ctrl-Shift-T )
   
   - Run Ros
-    roscore
+    - roscore
    
  - Run Publisher
-    rosrun random_driver random_driver
+    - rosrun random_driver random_driver
  
  - Run Subscriber
-    rostopic echo /odom
+    - rostopic echo /odom
  
  - Run Ros Graph 
-    rosrun rqt_graph rqt_graph
+    - rosrun rqt_graph rqt_graph
     
  
  
