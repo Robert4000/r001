@@ -65,7 +65,7 @@ int main(int argc, char **argv)
 	last_time 	= ros::Time::now();
 
 
-        // TODO. use stdr_robot.h
+        // TODO. create a robot object from stdr_robot.h
   	double 	steering_angle;
         int 	encoder_ticks;
         double  angular_velocity;
@@ -73,6 +73,7 @@ int main(int argc, char **argv)
         double  wheel_circunference;
         double  wheel_travel_distance;
 
+	
 	//Sets the loop to publish at a rate of 10Hz
 	ros::Rate rate(10);
 
@@ -84,7 +85,7 @@ int main(int argc, char **argv)
 		current_time = ros::Time::now();
 
 		// Get sensors data
-                // TODO The following 3 lines are random simulated. Use ros::Subscriber & rosserial instead.   
+                // TODO The following 3 lines are random simulated. Use ros services and device drivers instead.   
 
                 steering_angle		= int   ( rand() %  90  );  // 90 steering 
                 encoder_ticks		= double( rand() %  512 );  // 512 ticks per evolution
