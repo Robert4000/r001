@@ -34,10 +34,14 @@ Robert Banegas, 2018
    
  - Run Publisher
     - source ~/rosrover_ws/devel/setup.bash
-    - rosrun random_driver random_driver
+    - rosrun robot_motion_controller robot_motion_controller
  
  - Run Subscriber
     - rostopic echo /odom
+ 
+    
+ - Launch Husky Gazebo
+    - roslaunch husky_gazebo husky_empty_world.launch
  
  - Run Ros Graph 
     - rosrun rqt_graph rqt_graph
