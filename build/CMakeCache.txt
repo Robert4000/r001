@@ -312,10 +312,22 @@ lib:FILEPATH=/opt/ros/kinetic/lib/libxmlrpcpp.so
 message_runtime_DIR:PATH=/opt/ros/kinetic/share/message_runtime/cmake
 
 //Value Computed by CMake
+myrobot_controller_BINARY_DIR:STATIC=/home/robert/rosrover_ws/build/random_driver
+
+//Value Computed by CMake
+myrobot_controller_SOURCE_DIR:STATIC=/home/robert/rosrover_ws/src/random_driver
+
+//Value Computed by CMake
 random_driver_BINARY_DIR:STATIC=/home/robert/rosrover_ws/build/random_driver
 
 //Value Computed by CMake
 random_driver_SOURCE_DIR:STATIC=/home/robert/rosrover_ws/src/random_driver
+
+//Value Computed by CMake
+robot_motion_controller_BINARY_DIR:STATIC=/home/robert/rosrover_ws/build/random_driver
+
+//Value Computed by CMake
+robot_motion_controller_SOURCE_DIR:STATIC=/home/robert/rosrover_ws/src/random_driver
 
 //The directory containing a CMake configuration file for rosconsole.
 rosconsole_DIR:PATH=/opt/ros/kinetic/share/rosconsole/cmake

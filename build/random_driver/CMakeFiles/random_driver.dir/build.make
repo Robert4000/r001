@@ -57,38 +57,64 @@ include random_driver/CMakeFiles/random_driver.dir/progress.make
 # Include the compile flags for this target's objects.
 include random_driver/CMakeFiles/random_driver.dir/flags.make
 
-random_driver/CMakeFiles/random_driver.dir/src/random_driver_odo.cpp.o: random_driver/CMakeFiles/random_driver.dir/flags.make
-random_driver/CMakeFiles/random_driver.dir/src/random_driver_odo.cpp.o: /home/robert/rosrover_ws/src/random_driver/src/random_driver_odo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robert/rosrover_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object random_driver/CMakeFiles/random_driver.dir/src/random_driver_odo.cpp.o"
-	cd /home/robert/rosrover_ws/build/random_driver && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/random_driver.dir/src/random_driver_odo.cpp.o -c /home/robert/rosrover_ws/src/random_driver/src/random_driver_odo.cpp
+random_driver/CMakeFiles/random_driver.dir/src/robot_motion_controller_node.cpp.o: random_driver/CMakeFiles/random_driver.dir/flags.make
+random_driver/CMakeFiles/random_driver.dir/src/robot_motion_controller_node.cpp.o: /home/robert/rosrover_ws/src/random_driver/src/robot_motion_controller_node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robert/rosrover_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object random_driver/CMakeFiles/random_driver.dir/src/robot_motion_controller_node.cpp.o"
+	cd /home/robert/rosrover_ws/build/random_driver && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/random_driver.dir/src/robot_motion_controller_node.cpp.o -c /home/robert/rosrover_ws/src/random_driver/src/robot_motion_controller_node.cpp
 
-random_driver/CMakeFiles/random_driver.dir/src/random_driver_odo.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/random_driver.dir/src/random_driver_odo.cpp.i"
-	cd /home/robert/rosrover_ws/build/random_driver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robert/rosrover_ws/src/random_driver/src/random_driver_odo.cpp > CMakeFiles/random_driver.dir/src/random_driver_odo.cpp.i
+random_driver/CMakeFiles/random_driver.dir/src/robot_motion_controller_node.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/random_driver.dir/src/robot_motion_controller_node.cpp.i"
+	cd /home/robert/rosrover_ws/build/random_driver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robert/rosrover_ws/src/random_driver/src/robot_motion_controller_node.cpp > CMakeFiles/random_driver.dir/src/robot_motion_controller_node.cpp.i
 
-random_driver/CMakeFiles/random_driver.dir/src/random_driver_odo.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/random_driver.dir/src/random_driver_odo.cpp.s"
-	cd /home/robert/rosrover_ws/build/random_driver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robert/rosrover_ws/src/random_driver/src/random_driver_odo.cpp -o CMakeFiles/random_driver.dir/src/random_driver_odo.cpp.s
+random_driver/CMakeFiles/random_driver.dir/src/robot_motion_controller_node.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/random_driver.dir/src/robot_motion_controller_node.cpp.s"
+	cd /home/robert/rosrover_ws/build/random_driver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robert/rosrover_ws/src/random_driver/src/robot_motion_controller_node.cpp -o CMakeFiles/random_driver.dir/src/robot_motion_controller_node.cpp.s
 
-random_driver/CMakeFiles/random_driver.dir/src/random_driver_odo.cpp.o.requires:
+random_driver/CMakeFiles/random_driver.dir/src/robot_motion_controller_node.cpp.o.requires:
 
-.PHONY : random_driver/CMakeFiles/random_driver.dir/src/random_driver_odo.cpp.o.requires
+.PHONY : random_driver/CMakeFiles/random_driver.dir/src/robot_motion_controller_node.cpp.o.requires
 
-random_driver/CMakeFiles/random_driver.dir/src/random_driver_odo.cpp.o.provides: random_driver/CMakeFiles/random_driver.dir/src/random_driver_odo.cpp.o.requires
-	$(MAKE) -f random_driver/CMakeFiles/random_driver.dir/build.make random_driver/CMakeFiles/random_driver.dir/src/random_driver_odo.cpp.o.provides.build
-.PHONY : random_driver/CMakeFiles/random_driver.dir/src/random_driver_odo.cpp.o.provides
+random_driver/CMakeFiles/random_driver.dir/src/robot_motion_controller_node.cpp.o.provides: random_driver/CMakeFiles/random_driver.dir/src/robot_motion_controller_node.cpp.o.requires
+	$(MAKE) -f random_driver/CMakeFiles/random_driver.dir/build.make random_driver/CMakeFiles/random_driver.dir/src/robot_motion_controller_node.cpp.o.provides.build
+.PHONY : random_driver/CMakeFiles/random_driver.dir/src/robot_motion_controller_node.cpp.o.provides
 
-random_driver/CMakeFiles/random_driver.dir/src/random_driver_odo.cpp.o.provides.build: random_driver/CMakeFiles/random_driver.dir/src/random_driver_odo.cpp.o
+random_driver/CMakeFiles/random_driver.dir/src/robot_motion_controller_node.cpp.o.provides.build: random_driver/CMakeFiles/random_driver.dir/src/robot_motion_controller_node.cpp.o
+
+
+random_driver/CMakeFiles/random_driver.dir/src/RobotMotionController.cpp.o: random_driver/CMakeFiles/random_driver.dir/flags.make
+random_driver/CMakeFiles/random_driver.dir/src/RobotMotionController.cpp.o: /home/robert/rosrover_ws/src/random_driver/src/RobotMotionController.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robert/rosrover_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object random_driver/CMakeFiles/random_driver.dir/src/RobotMotionController.cpp.o"
+	cd /home/robert/rosrover_ws/build/random_driver && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/random_driver.dir/src/RobotMotionController.cpp.o -c /home/robert/rosrover_ws/src/random_driver/src/RobotMotionController.cpp
+
+random_driver/CMakeFiles/random_driver.dir/src/RobotMotionController.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/random_driver.dir/src/RobotMotionController.cpp.i"
+	cd /home/robert/rosrover_ws/build/random_driver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robert/rosrover_ws/src/random_driver/src/RobotMotionController.cpp > CMakeFiles/random_driver.dir/src/RobotMotionController.cpp.i
+
+random_driver/CMakeFiles/random_driver.dir/src/RobotMotionController.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/random_driver.dir/src/RobotMotionController.cpp.s"
+	cd /home/robert/rosrover_ws/build/random_driver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robert/rosrover_ws/src/random_driver/src/RobotMotionController.cpp -o CMakeFiles/random_driver.dir/src/RobotMotionController.cpp.s
+
+random_driver/CMakeFiles/random_driver.dir/src/RobotMotionController.cpp.o.requires:
+
+.PHONY : random_driver/CMakeFiles/random_driver.dir/src/RobotMotionController.cpp.o.requires
+
+random_driver/CMakeFiles/random_driver.dir/src/RobotMotionController.cpp.o.provides: random_driver/CMakeFiles/random_driver.dir/src/RobotMotionController.cpp.o.requires
+	$(MAKE) -f random_driver/CMakeFiles/random_driver.dir/build.make random_driver/CMakeFiles/random_driver.dir/src/RobotMotionController.cpp.o.provides.build
+.PHONY : random_driver/CMakeFiles/random_driver.dir/src/RobotMotionController.cpp.o.provides
+
+random_driver/CMakeFiles/random_driver.dir/src/RobotMotionController.cpp.o.provides.build: random_driver/CMakeFiles/random_driver.dir/src/RobotMotionController.cpp.o
 
 
 # Object files for target random_driver
 random_driver_OBJECTS = \
-"CMakeFiles/random_driver.dir/src/random_driver_odo.cpp.o"
+"CMakeFiles/random_driver.dir/src/robot_motion_controller_node.cpp.o" \
+"CMakeFiles/random_driver.dir/src/RobotMotionController.cpp.o"
 
 # External object files for target random_driver
 random_driver_EXTERNAL_OBJECTS =
 
-/home/robert/rosrover_ws/devel/lib/random_driver/random_driver: random_driver/CMakeFiles/random_driver.dir/src/random_driver_odo.cpp.o
+/home/robert/rosrover_ws/devel/lib/random_driver/random_driver: random_driver/CMakeFiles/random_driver.dir/src/robot_motion_controller_node.cpp.o
+/home/robert/rosrover_ws/devel/lib/random_driver/random_driver: random_driver/CMakeFiles/random_driver.dir/src/RobotMotionController.cpp.o
 /home/robert/rosrover_ws/devel/lib/random_driver/random_driver: random_driver/CMakeFiles/random_driver.dir/build.make
 /home/robert/rosrover_ws/devel/lib/random_driver/random_driver: /opt/ros/kinetic/lib/libroscpp.so
 /home/robert/rosrover_ws/devel/lib/random_driver/random_driver: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
@@ -110,7 +136,7 @@ random_driver_EXTERNAL_OBJECTS =
 /home/robert/rosrover_ws/devel/lib/random_driver/random_driver: /usr/lib/x86_64-linux-gnu/libpthread.so
 /home/robert/rosrover_ws/devel/lib/random_driver/random_driver: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
 /home/robert/rosrover_ws/devel/lib/random_driver/random_driver: random_driver/CMakeFiles/random_driver.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/robert/rosrover_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/robert/rosrover_ws/devel/lib/random_driver/random_driver"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/robert/rosrover_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable /home/robert/rosrover_ws/devel/lib/random_driver/random_driver"
 	cd /home/robert/rosrover_ws/build/random_driver && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/random_driver.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -118,7 +144,8 @@ random_driver/CMakeFiles/random_driver.dir/build: /home/robert/rosrover_ws/devel
 
 .PHONY : random_driver/CMakeFiles/random_driver.dir/build
 
-random_driver/CMakeFiles/random_driver.dir/requires: random_driver/CMakeFiles/random_driver.dir/src/random_driver_odo.cpp.o.requires
+random_driver/CMakeFiles/random_driver.dir/requires: random_driver/CMakeFiles/random_driver.dir/src/robot_motion_controller_node.cpp.o.requires
+random_driver/CMakeFiles/random_driver.dir/requires: random_driver/CMakeFiles/random_driver.dir/src/RobotMotionController.cpp.o.requires
 
 .PHONY : random_driver/CMakeFiles/random_driver.dir/requires
 

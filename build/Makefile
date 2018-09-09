@@ -478,17 +478,17 @@ std_msgs_generate_messages_lisp/fast:
 .PHONY : std_msgs_generate_messages_lisp/fast
 
 #=============================================================================
-# Target rules for targets named random_driver
+# Target rules for targets named robot_motion_controller
 
 # Build rule for target.
-random_driver: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 random_driver
-.PHONY : random_driver
+robot_motion_controller: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 robot_motion_controller
+.PHONY : robot_motion_controller
 
 # fast build rule for target.
-random_driver/fast:
-	$(MAKE) -f random_driver/CMakeFiles/random_driver.dir/build.make random_driver/CMakeFiles/random_driver.dir/build
-.PHONY : random_driver/fast
+robot_motion_controller/fast:
+	$(MAKE) -f random_driver/CMakeFiles/robot_motion_controller.dir/build.make random_driver/CMakeFiles/robot_motion_controller.dir/build
+.PHONY : robot_motion_controller/fast
 
 # Help Target
 help:
@@ -527,7 +527,7 @@ help:
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... std_msgs_generate_messages_lisp"
-	@echo "... random_driver"
+	@echo "... robot_motion_controller"
 .PHONY : help
 
 

@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(random_driver)
+project(robot_motion_controller)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
@@ -197,12 +197,12 @@ include_directories(
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
 
-set( sources ~/rosrover_ws/src/random_driver/src/random_driver_odo.cpp )
+set( sources ~/rosrover_ws/src/random_driver/src/robot_motion_controller_node.cpp  ~/rosrover_ws/src/random_driver/src/RobotMotionController.cpp )
 
-add_executable(random_driver ${sources} )
+add_executable( robot_motion_controller ${sources} )
 
-target_compile_options( random_driver PUBLIC -std=c++11 -fpermissive -w -Wall )
+target_compile_options( robot_motion_controller PUBLIC -std=c++11 -fpermissive -w -Wall )
 
-target_link_libraries(random_driver ${catkin_LIBRARIES})
+target_link_libraries( robot_motion_controller ${catkin_LIBRARIES})
 
 

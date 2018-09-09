@@ -1,0 +1,8 @@
+prefix=/home/robert/rosrover_ws/devel
+
+Name: myrobot_controller
+Description: Description of myrobot_controller
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/robert/rosrover_ws/devel/lib 
+Requires: 

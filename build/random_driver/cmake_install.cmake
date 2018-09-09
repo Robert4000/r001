@@ -33,17 +33,17 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/robert/rosrover_ws/build/random_driver/catkin_generated/installspace/random_driver.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/robert/rosrover_ws/build/random_driver/catkin_generated/installspace/robot_motion_controller.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/random_driver/cmake" TYPE FILE FILES
-    "/home/robert/rosrover_ws/build/random_driver/catkin_generated/installspace/random_driverConfig.cmake"
-    "/home/robert/rosrover_ws/build/random_driver/catkin_generated/installspace/random_driverConfig-version.cmake"
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robot_motion_controller/cmake" TYPE FILE FILES
+    "/home/robert/rosrover_ws/build/random_driver/catkin_generated/installspace/robot_motion_controllerConfig.cmake"
+    "/home/robert/rosrover_ws/build/random_driver/catkin_generated/installspace/robot_motion_controllerConfig-version.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/random_driver" TYPE FILE FILES "/home/robert/rosrover_ws/src/random_driver/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robot_motion_controller" TYPE FILE FILES "/home/robert/rosrover_ws/src/random_driver/package.xml")
 endif()
 

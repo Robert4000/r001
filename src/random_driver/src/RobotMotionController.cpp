@@ -24,65 +24,52 @@
 
 
 
-#include <ros/ros.h>
-#include <stdlib.h>
-#include <nav_msgs/Odometry.h>
-#include <tf/transform_broadcaster.h>
+
+#include "../include/RobotMotionController.hpp"
+
+
+
+#include <cmath>
 
 
 
 
-int main(int argc, char **argv) 
-{
+    RobotMotionController::RobotMotionController() 
+        
 
-	//Initializes ROS, and sets up a node
-
-	ros::init(argc, argv, "random_driver");
-
-	ros::NodeHandle n;
-
-	//Ceates the publisher, and tells it to publish
-
-	ros::Publisher odom_pub = n.advertise<nav_msgs::Odometry>("odom", 50);
-	//tf::TransformBroadcaster odom_broadcaster;
-
-	//Sets up the random number generator
-	srand(time(0));
+    {
 
 
-	double x  = 0.0;
-	double y  = 0.0;
-	double th = 0.0;
+        registerPublisher(); 
 
 
-	double vx;
-	double vy;
-	double vth;
+
+        ROS_INFO("robot_motion_controller node launched.");
+
+    }
+
+    RobotMotionController::~RobotMotionController()
+    {
+    }
+    
 
 
-	ros::Time current_time, last_time;
-	current_time 	= ros::Time::now();
-	last_time 	= ros::Time::now();
+
+    void RobotMotionController::registerPublisher()
+    {
+	// Publisher for the Husky Robot Gazebo
+        pub_vel_    =     node_handler_.advertise< geometry_msgs::Twist>("/husky_velocity_controller/cmd_vel", 10); 
+
+	// Publisher for the topic odom.
+        pub_odom_   =     node_handler_.advertise< nav_msgs::Odometry>("odom", 50);
+    }
 
 
-        // TODO. create a robot object from stdr_robot.h
-  	double 	steering_angle;
-        int 	encoder_ticks;
-        double  angular_velocity;
-        double  wheel_radius = 0.2; 
-        double  wheel_circunference;
-        double  wheel_travel_distance;
 
-	
-	//Sets the loop to publish at a rate of 10Hz
-	ros::Rate rate(10);
-
-
-  	while(ros::ok()) 
-	{
-
-		ros::spinOnce();               // check for incoming messages
+  void RobotMotionController::estimate()
+  { 
 		current_time = ros::Time::now();
+
 
 		// Get sensors data
                 // TODO The following 3 lines are random simulated. Use ros subscribers and device drivers.   
@@ -103,6 +90,8 @@ int main(int argc, char **argv)
 		vth  	= angular_velocity; 
 
 
+ 
+
 		//compute odometry given the velocities of the robot
 		double dt 	=  ( current_time - last_time ).toSec();
 		double delta_x 	=  ( vx * cos (th) - vy * sin (th) ) * dt;
@@ -112,6 +101,26 @@ int main(int argc, char **argv)
 		x 	+= delta_x;
 		y 	+= delta_y;
 		th 	+= delta_th;
+
+
+
+	}
+
+
+
+ 	void RobotMotionController::publish()
+       {
+
+		geometry_msgs::Twist msg;
+
+		    msg.linear.x = vx;
+                    msg.linear.y = vy;
+		    msg.angular.z = vth;
+
+		// Publish the Velocities.  For testing with Husky Gazebo
+		 pub_vel_.publish(msg);
+
+
 
 
 		//since all odometry is 6DOF we'll need a quaternion created from yaw
@@ -127,10 +136,6 @@ int main(int argc, char **argv)
 		odom_trans.transform.translation.y 	= y;
 		odom_trans.transform.translation.z 	= 0.0;
 		odom_trans.transform.rotation 		= odom_quat;
-
-
-		//send the transform
-		//odom_broadcaster.sendTransform( odom_trans );  
 
 
 		nav_msgs::Odometry odom;
@@ -152,16 +157,42 @@ int main(int argc, char **argv)
 		odom.twist.twist.angular.z 	= vth;
 
 
-		//publish the message
-		odom_pub.publish(odom);
+
+ 		//Publish the Pose to the topic odom. Test it with the terminal
+		pub_odom_.publish( odom );
+
+
+       }	
+
+
+
+  void RobotMotionController::Run()
+  
+  {
+
+	//Sets up the random number generator
+	srand(time(0));
+
+	current_time 	= ros::Time::now();
+	last_time 	= ros::Time::now();
+
+	
+	//Sets the loop to publish at a rate of 10Hz
+	ros::Rate rate(10);
+
+
+  	while(ros::ok()) 
+	{
+
+		estimate();
+
+                publish();
+
 
 		//Delays until it is time to send another message
 		rate.sleep();
 	}
 }
-
-
-
 
 
 

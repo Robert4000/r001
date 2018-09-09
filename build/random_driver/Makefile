@@ -391,46 +391,73 @@ std_msgs_generate_messages_lisp/fast:
 .PHONY : std_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
-random_driver/CMakeFiles/random_driver.dir/rule:
-	cd /home/robert/rosrover_ws/build && $(MAKE) -f CMakeFiles/Makefile2 random_driver/CMakeFiles/random_driver.dir/rule
-.PHONY : random_driver/CMakeFiles/random_driver.dir/rule
+random_driver/CMakeFiles/robot_motion_controller.dir/rule:
+	cd /home/robert/rosrover_ws/build && $(MAKE) -f CMakeFiles/Makefile2 random_driver/CMakeFiles/robot_motion_controller.dir/rule
+.PHONY : random_driver/CMakeFiles/robot_motion_controller.dir/rule
 
 # Convenience name for target.
-random_driver: random_driver/CMakeFiles/random_driver.dir/rule
+robot_motion_controller: random_driver/CMakeFiles/robot_motion_controller.dir/rule
 
-.PHONY : random_driver
+.PHONY : robot_motion_controller
 
 # fast build rule for target.
-random_driver/fast:
-	cd /home/robert/rosrover_ws/build && $(MAKE) -f random_driver/CMakeFiles/random_driver.dir/build.make random_driver/CMakeFiles/random_driver.dir/build
-.PHONY : random_driver/fast
+robot_motion_controller/fast:
+	cd /home/robert/rosrover_ws/build && $(MAKE) -f random_driver/CMakeFiles/robot_motion_controller.dir/build.make random_driver/CMakeFiles/robot_motion_controller.dir/build
+.PHONY : robot_motion_controller/fast
 
-src/random_driver_odo.o: src/random_driver_odo.cpp.o
+src/RobotMotionController.o: src/RobotMotionController.cpp.o
 
-.PHONY : src/random_driver_odo.o
+.PHONY : src/RobotMotionController.o
 
 # target to build an object file
-src/random_driver_odo.cpp.o:
-	cd /home/robert/rosrover_ws/build && $(MAKE) -f random_driver/CMakeFiles/random_driver.dir/build.make random_driver/CMakeFiles/random_driver.dir/src/random_driver_odo.cpp.o
-.PHONY : src/random_driver_odo.cpp.o
+src/RobotMotionController.cpp.o:
+	cd /home/robert/rosrover_ws/build && $(MAKE) -f random_driver/CMakeFiles/robot_motion_controller.dir/build.make random_driver/CMakeFiles/robot_motion_controller.dir/src/RobotMotionController.cpp.o
+.PHONY : src/RobotMotionController.cpp.o
 
-src/random_driver_odo.i: src/random_driver_odo.cpp.i
+src/RobotMotionController.i: src/RobotMotionController.cpp.i
 
-.PHONY : src/random_driver_odo.i
+.PHONY : src/RobotMotionController.i
 
 # target to preprocess a source file
-src/random_driver_odo.cpp.i:
-	cd /home/robert/rosrover_ws/build && $(MAKE) -f random_driver/CMakeFiles/random_driver.dir/build.make random_driver/CMakeFiles/random_driver.dir/src/random_driver_odo.cpp.i
-.PHONY : src/random_driver_odo.cpp.i
+src/RobotMotionController.cpp.i:
+	cd /home/robert/rosrover_ws/build && $(MAKE) -f random_driver/CMakeFiles/robot_motion_controller.dir/build.make random_driver/CMakeFiles/robot_motion_controller.dir/src/RobotMotionController.cpp.i
+.PHONY : src/RobotMotionController.cpp.i
 
-src/random_driver_odo.s: src/random_driver_odo.cpp.s
+src/RobotMotionController.s: src/RobotMotionController.cpp.s
 
-.PHONY : src/random_driver_odo.s
+.PHONY : src/RobotMotionController.s
 
 # target to generate assembly for a file
-src/random_driver_odo.cpp.s:
-	cd /home/robert/rosrover_ws/build && $(MAKE) -f random_driver/CMakeFiles/random_driver.dir/build.make random_driver/CMakeFiles/random_driver.dir/src/random_driver_odo.cpp.s
-.PHONY : src/random_driver_odo.cpp.s
+src/RobotMotionController.cpp.s:
+	cd /home/robert/rosrover_ws/build && $(MAKE) -f random_driver/CMakeFiles/robot_motion_controller.dir/build.make random_driver/CMakeFiles/robot_motion_controller.dir/src/RobotMotionController.cpp.s
+.PHONY : src/RobotMotionController.cpp.s
+
+src/robot_motion_controller_node.o: src/robot_motion_controller_node.cpp.o
+
+.PHONY : src/robot_motion_controller_node.o
+
+# target to build an object file
+src/robot_motion_controller_node.cpp.o:
+	cd /home/robert/rosrover_ws/build && $(MAKE) -f random_driver/CMakeFiles/robot_motion_controller.dir/build.make random_driver/CMakeFiles/robot_motion_controller.dir/src/robot_motion_controller_node.cpp.o
+.PHONY : src/robot_motion_controller_node.cpp.o
+
+src/robot_motion_controller_node.i: src/robot_motion_controller_node.cpp.i
+
+.PHONY : src/robot_motion_controller_node.i
+
+# target to preprocess a source file
+src/robot_motion_controller_node.cpp.i:
+	cd /home/robert/rosrover_ws/build && $(MAKE) -f random_driver/CMakeFiles/robot_motion_controller.dir/build.make random_driver/CMakeFiles/robot_motion_controller.dir/src/robot_motion_controller_node.cpp.i
+.PHONY : src/robot_motion_controller_node.cpp.i
+
+src/robot_motion_controller_node.s: src/robot_motion_controller_node.cpp.s
+
+.PHONY : src/robot_motion_controller_node.s
+
+# target to generate assembly for a file
+src/robot_motion_controller_node.cpp.s:
+	cd /home/robert/rosrover_ws/build && $(MAKE) -f random_driver/CMakeFiles/robot_motion_controller.dir/build.make random_driver/CMakeFiles/robot_motion_controller.dir/src/robot_motion_controller_node.cpp.s
+.PHONY : src/robot_motion_controller_node.cpp.s
 
 # Help Target
 help:
@@ -457,13 +484,16 @@ help:
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... std_msgs_generate_messages_lisp"
-	@echo "... random_driver"
 	@echo "... install/strip"
+	@echo "... robot_motion_controller"
 	@echo "... install/local"
 	@echo "... install"
-	@echo "... src/random_driver_odo.o"
-	@echo "... src/random_driver_odo.i"
-	@echo "... src/random_driver_odo.s"
+	@echo "... src/RobotMotionController.o"
+	@echo "... src/RobotMotionController.i"
+	@echo "... src/RobotMotionController.s"
+	@echo "... src/robot_motion_controller_node.o"
+	@echo "... src/robot_motion_controller_node.i"
+	@echo "... src/robot_motion_controller_node.s"
 .PHONY : help
 
 
